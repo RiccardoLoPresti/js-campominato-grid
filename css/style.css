@@ -38,6 +38,7 @@ button, select{
 .square{
   border: 1px solid rgb(255, 255, 255);
   background-color: #464D77;
+  color: #0C1713;
   display: flex;
   justify-content: center;
   align-items: center;
