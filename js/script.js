@@ -4,10 +4,11 @@ Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.*/
 const btn = document.getElementById('play')
 const container = document.querySelector('.container');
-const squareForRow = 4;
+const squareForRow = document.getElementById('level').value;
 
 btn.addEventListener('click', function(){
   init()
+  console.log(squareGen());
 });
 
 
@@ -15,6 +16,7 @@ btn.addEventListener('click', function(){
  * Funzione di inizializazione
  */
 function init() {
+  container.innerHTML = '';
   //salvo il numero dei quadratini
   const totalSquare = squareTot(squareForRow);
   //salvo il numero totale dei quadratini

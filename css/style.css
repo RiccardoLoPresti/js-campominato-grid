@@ -6,7 +6,11 @@
 
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #7c7c7c;
+  background-color: #36827F;
+}
+
+h1{
+  color: #ffffff;
 }
 
 header{
@@ -20,10 +24,10 @@ button, select{
 }
 
 .main-wrapper{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 .container{
@@ -36,7 +40,7 @@ button, select{
 
 .square{
   border: 1px solid rgb(255, 255, 255);
-  background-color: #6e989b;
+  background-color: #464D77;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,5 +48,5 @@ button, select{
 }
 
 .color{
-  background-color: chocolate;
+  background-color: #F9DB6D;
 }
