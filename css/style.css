@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .main-wrapper{
   height: 100vh;
   display: flex;
@@ -18,7 +22,6 @@
   align-content: flex-start;
   width: 500px;
   height: 500px;
-  background-color: #1d3222;
 }
 
 .square{
@@ -26,4 +29,12 @@
   height: calc(100% / 10);
   border: 1px solid rgb(255, 255, 255);
   background-color: #6e989b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.color{
+  background-color: chocolate;
 }
