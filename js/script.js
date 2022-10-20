@@ -10,20 +10,30 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 //5. la casella cliccata si colora
 
 const container = document.querySelector('.container');
-const square = document.createElement('div');
-
-square.className = "square";
-container.append(square);
-
 const squareForRow = 10;
 
+//salvo il numero massimo dei quadratini
+const totalSquare = squareTot(squareForRow);
+const squares = squareGen(totalSquare)
 
-function init(){
-  
+console.log(maxSquare);
+
+
+/**
+ * Calcola il numero massimo dei quadratini
+ * @param {number} numberSquareForRow 
+ * @returns 
+ */
+function squareTot(numberSquareForRow){
+  return totSquare = Math.pow(numberSquareForRow, 2);
 }
 
-function squareGen(numberSquareForRow){
-  return totalSquare = Math.pow(numberSquareForRow, 2);
-}
+function squareGen(nSquare){
+  for(let i = 0; i < nSquare; i++){
+    const square = document.createElement('div');
+    square.className = "square";
+    container.append(square);
+  }
 
-console.log(squareGen(5));
+  return square;
+}

@@ -24,6 +24,6 @@
 .square{
   width: calc(100% / 10);
   height: calc(100% / 10);
-  border: 2px solid rgb(255, 255, 255);
-  background-color: #000000;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #6e989b;
 }
