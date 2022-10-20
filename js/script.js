@@ -2,16 +2,24 @@
 Ogni cella ha un numero progressivo, da 1 a 100.
 Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.*/
-
+const btn = document.getElementById('play')
 const container = document.querySelector('.container');
-const squareForRow = 10;
+const squareForRow = 4;
 
-//salvo il numero dei quadratini
-const totalSquare = squareTot(squareForRow);
-//salvo il numero totale dei quadratini
-const squares = squareGen(totalSquare);
+btn.addEventListener('click', function(){
+  init()
+});
 
 
+/**
+ * Funzione di inizializazione
+ */
+function init() {
+  //salvo il numero dei quadratini
+  const totalSquare = squareTot(squareForRow);
+  //salvo il numero totale dei quadratini
+  const squares = squareGen(totalSquare);
+}
 
 /**
  * Calcola il numero massimo dei quadratini
@@ -32,6 +40,8 @@ function squareGen(nSquare){
   for(let i = 0; i < nSquare; i++){
     let square = document.createElement('div');
     square.className = "square";
+    square.style.width = `calc(100% / ${squareForRow}`
+    square.style.height = `calc(100% / ${squareForRow}`
     container.append(square);
     square.idSq = i + 1;
     square.addEventListener('click', function(){
@@ -43,4 +53,6 @@ function squareGen(nSquare){
   return;
 }
 
-
+function squareSize(squareForRow) {
+  
+}
