@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #7c7c7c;
 }
 
 .container{
@@ -17,12 +18,12 @@
   align-content: flex-start;
   width: 500px;
   height: 500px;
-  background-color: aliceblue;
+  background-color: #1d3222;
 }
 
 .square{
-
   width: calc(100% / 10);
   height: calc(100% / 10);
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #000000;
 }
